@@ -166,7 +166,7 @@ class Client implements ClientInterface
      */
     protected function url($url)
     {
-        if ($url{0} !== '/') {
+        if ($url[0] !== '/') {
             $url = "/{$url}";
         }
         return $this->base_url . $url;

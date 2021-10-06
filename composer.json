@@ -4,11 +4,15 @@
     "license": "GPL-3.0-or-later",
     "minimum-stability": "dev",
     "type": "library",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "authors": [
         {
             "name": "Leda Ferreira",
             "email": "leda-ferreira@users.noreply.github.com"
+        },
+        {
+            "name": "Marcus Figueriedo",
+            "email": "figueiredo@pm.me"
         }
     ],
     "keywords": [
