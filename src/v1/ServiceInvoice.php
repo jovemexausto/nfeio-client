@@ -193,11 +193,8 @@ class ServiceInvoice extends Model
      */
     public static function pdfById($company_id, $id)
     {
-        $url = self::v1()->get("/v1/companies/{$company_id}/serviceinvoices/{$id}/pdf");
-        if (filter_var($url, FILTER_VALIDATE_URL)) {
-            return file_get_contents($url);
-        }
-        return false;
+        $response = self::v1()->get("/v1/companies/{$company_id}/serviceinvoices/{$id}/pdf");
+        return $response;
     }
 
     /**
@@ -208,11 +205,8 @@ class ServiceInvoice extends Model
      */
     public static function xmlById($company_id, $id)
     {
-        $url = self::v1()->get("/v1/companies/{$company_id}/serviceinvoices/{$id}/xml");
-        if (filter_var($url, FILTER_VALIDATE_URL)) {
-            return file_get_contents($url);
-        }
-        return false;
+        $response = self::v1()->get("/v1/companies/{$company_id}/serviceinvoices/{$id}/xml");
+        return $response;
     }
 
     /**
